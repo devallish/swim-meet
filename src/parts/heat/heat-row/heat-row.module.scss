@@ -1,0 +1,19 @@
+.heat_row_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto 1fr;
+}
+.lane_number_cell {
+  background-color: red;
+}
+.competitor_name_cell {
+  background-color: purple;
+}
+.club_short_name_cell {
+  background-color: green;
+}
+.result_cell {
+  background-color: orange;
+}
+.position_cell {
+  background-color: blue;
+}

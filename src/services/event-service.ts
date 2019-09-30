@@ -1,4 +1,4 @@
-import { Meet } from "./event-models";
+import { MeetModel } from "../models/event-models";
 
 const DB_NAME = "SwimMeetsDB";
 const MEET_STORE_NAME = "SwimMeets";
@@ -7,7 +7,7 @@ const MEET_STORE_NAME = "SwimMeets";
   
 // }
 
-export function getMeet(id: string): Meet {
+export function getMeet(id: string): MeetModel {
   return {
     id: "MT123",
     name: "Andover Summer Open",
@@ -48,12 +48,14 @@ export function getMeet(id: string): Meet {
           {
             id: "HT2-1",
             number: 1,
-            competitors: []
+            lanes: [
+              { laneNumber: 1, competitorId: }
+            ]
           },
           {
             id: "HT2-2",
             number: 2,
-            competitors: []
+            lanes: []
           }
         ]
       },

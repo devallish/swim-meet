@@ -1,11 +1,10 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from "react";
 
 interface LayoutProps {
   header: ReactNode;
   content: ReactNode;
   footer: ReactNode;
 }
-
 
 const Layout = (props: LayoutProps) => {
   return (
@@ -14,7 +13,7 @@ const Layout = (props: LayoutProps) => {
       {props.content}
       {props.footer}
     </div>
-  )
-}
+  );
+};
 
 export default Layout;
